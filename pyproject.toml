@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aimonitor"
+version = "1.1.0"
+description = "零依赖的网页版训练监控：全量神经元、梯度分布、特征图、损失曲面"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+dependencies = ["numpy"]
+
+[project.urls]
+Homepage = "https://github.com/ccbda3/aimonitor"
+Repository = "https://github.com/ccbda3/aimonitor"
+Issues = "https://github.com/ccbda3/aimonitor/issues"
+
+[tool.setuptools]
+packages = ["aimonitor"]
+
+[tool.setuptools.package-data]
+aimonitor = ["assets/*"]
